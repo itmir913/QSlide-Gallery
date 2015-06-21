@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.tistory.itmir.qslidegallery.QSlideGalleryActivity">
+
+    <Button
+        android:id="@+id/mChooseButton"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_corners_melon_yellow"
+        android:onClick="mChooseButton"
+        android:text="사진 선택"
+        android:textSize="30sp"
+        android:padding="15sp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/mQSlideButton"
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_corners_melon_yellow"
+        android:onClick="mQSlideButton"
+        android:text="QSlide"
+        android:textSize="30sp"
+        android:padding="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <CheckBox
+        android:id="@+id/mHideTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overlapping Title"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:checked="false" />
+</LinearLayout>

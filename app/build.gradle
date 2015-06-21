@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 'LGE:QSlide Add-On:17'
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.tistory.itmir.qslidegallery"
+        minSdkVersion 17
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            debuggable false
+            jniDebuggable false
+            minifyEnabled false
+            zipAlignEnabled true
+        }
+    }
+}
+
+dependencies {
+}
