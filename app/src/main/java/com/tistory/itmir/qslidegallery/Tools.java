@@ -4,6 +4,7 @@ import android.net.Uri;
 import android.os.Environment;
 
 import java.io.File;
+import java.io.IOException;
 
 /**
  * Created by whdghks913 on 2015-06-21.
@@ -21,6 +22,14 @@ public class Tools {
         if (!mFolder.exists()) mFolder.mkdirs();
 
         File mFile = new File(mFilePath);
+
+        File mNoMediaFile = new File(mPath + ".nomedia");
+        if (!mNoMediaFile.exists())
+            try {
+                mNoMediaFile.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
         return mFile;
     }
